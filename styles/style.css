@@ -1,49 +1,78 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(235, 196, 235);
+body {
+  background-color: rgb(247, 221, 247);
 }
 
-.img-logo{
-    width: 230px !important;
-    height: auto !important;
-    margin-right: 50px;
+.img-logo {
+  width: 230px !important;
+  height: auto !important;
+  margin-right: 50px;
 }
 
-.navbar{
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo-container{
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
- 
+.logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
 }
 
-.logo{
-
-    width: 300px;
-    height: auto;
-    margin-right: 200px;
-    align-items: start;;
+.logo {
+  width: 300px;
+  height: auto;
+  margin-right: 200px;
+  align-items: start;
 }
-.title-section{
-    display: flex;
-    align-items:center;
-    margin-right: 0px;
-    font-family: "Mrs Saint Delafield", cursive;
-    font-weight: 400;
-    font-style: normal;
+.title-section {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1{
-    font-size: 90px;
+h1 {
+    margin-top: 30px;
+  font-size: 98px;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 70px 30px 50px 30px;
+  font-family: "Poppins", serif;
+}
+
+.intro-container {
+  margin-top: 80px;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+p{
+    font-family: 'Poppins', cursive;
+    font-size: larger;
+}
+.p1 {
+  grid-area: 1 / 1 / 2 / 6;
+    margin: 0 30px 0 30px;
+}
+.p2 {
+  grid-area: 2 / 2 / 3 / 4;
+  margin-right: 30px;
+}
+.p3 {
+  grid-area: 3 / 1 / 4 / 4;
+  margin: 0 30px 0 30px;
 }
