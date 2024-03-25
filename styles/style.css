@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +6,44 @@
 }
 
 body{
-    background-color: rgb(235, 160, 235);
+    background-color: rgb(235, 196, 235);
+}
+
+.img-logo{
+    width: 230px !important;
+    height: auto !important;
+    margin-right: 50px;
+}
+
+.navbar{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+ 
+}
+
+.logo{
+
+    width: 300px;
+    height: auto;
+    margin-right: 200px;
+    align-items: start;;
+}
+.title-section{
+    display: flex;
+    align-items:center;
+    margin-right: 0px;
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 90px;
 }
