@@ -13,7 +13,12 @@ body {
   height: auto !important;
   margin-right: 50px;
 }
-
+.navbar-toggler{
+  margin-right: 10px;
+}
+.navbar-toggler-icon{
+  width: 1em !important;
+}
 .navbar {
   display: flex !important;
   justify-content: space-between;
@@ -81,12 +86,21 @@ p{
   text-align: justify;
 }
 
-@media screen and (min-width: 360px){
+@media screen and (min-width: 320px){
   h1{
     display: none;
   }
   .navbar{
     height: 280px;
+    background-image: url("../assets/foot.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    block-size: 150px;
+  }
+  .navbar-toggler{
+    border-color: rgba(175, 96, 116, 0.815) !important;
+    border-width: 3px;
   }
   .img-container{
     height: 100px;
@@ -97,6 +111,7 @@ p{
     margin-top: -100px;
     width: 100%;
     height: auto;
+    display: none;
   }
 
   .intro-container{
@@ -106,5 +121,56 @@ p{
   .p2{
     margin-left: 30px;
   }
+
+}
+
+@media screen and (min-width: 700px){
+  h1{
+    display: none;
+  }
+  /* .navbar-toggler{
+    margin-right: 10px;
+  } */
+  .navbar{
+    height: 300px;
+  }
+  .navbar-toggler{
+    border-color: rgba(175, 96, 116, 0.815) !important;
+    border-width: 3px;
+  }
+  .navbar-toggler-icon{
+    width: 3em !important;
+    height: 3em !important;
+  }
+  p{
+    font-size: 30px;
+  }
+  .info{
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .navbar{
+    height: 250px;
+    block-size: 300px;
+    background-size: contain ;
+    background-color: white !important;
+  }
+
+  .img-container{
+    height: 50px;
+  }
+  .img-logo{
+    width: 10%;
+  }
+  .pie{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+  }
+  .img-foot{
+    width: 400px ;
  
+  }
 }
