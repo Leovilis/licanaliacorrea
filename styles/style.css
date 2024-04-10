@@ -127,15 +127,6 @@ p {
   grid-column-gap: 10px;
 }
 
-.img-services:hover {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  box-shadow: 0px 0px 15px 15px #ff61a3;
-  -webkit-box-shadow: 0px 0px 15px 15px #ff61a3;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-}
-
 @media screen and (min-width: 320px) {
   h1 {
     display: none;
@@ -183,6 +174,14 @@ p {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    margin: 50px 0 50px 6px;
   }
 }
 
@@ -237,5 +236,34 @@ p {
   }
   .img-foot {
     width: 200px;
+  }
+  .img-services {
+    width: 180px;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .services-container {
+    display: grid;
+    justify-content: space-around;
+    margin: 50px 0 50px 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr;
+    grid-column-gap: 10px;
+  }
+  .img-services:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ff61a3;
+    -webkit-box-shadow: 0px 0px 15px 15px #ff61a3;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+  .prestaciones {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #ff61a3  ;
+    text-shadow: 4px 4px 2px rgba(202,120,120,0.6);
   }
 }
