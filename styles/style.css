@@ -33,6 +33,14 @@ body {
   align-items: center;
   width: 100%;
 }
+.prestaciones {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+  color: #ff61a3  ;
+  text-shadow: 4px 4px 2px rgba(202,120,120,0.6);
+}
 
 /* .logo {
   width: 300px;
@@ -133,6 +141,9 @@ p {
 @media screen and (min-width: 320px) {
   h1 {
     display: none;
+  }
+  .prestaciones {
+    font-size: 100px;
   }
   .navbar {
     height: 280px;
@@ -245,7 +256,7 @@ p {
     width: 180px;
     height: auto;
     grid-area: 1 / 1 / 2 / 2;
-    filter: blur(1px);
+    filter: blur(5px);
   }
   .services-container {
     display: grid;
@@ -265,14 +276,7 @@ p {
     margin-right: 100px !important;
     filter: blur(0px);
   }
-  .prestaciones {
-    font-family: "Mrs Saint Delafield", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 150px;
-    color: #ff61a3  ;
-    text-shadow: 4px 4px 2px rgba(202,120,120,0.6);
-  }
+  
  
   
 }
