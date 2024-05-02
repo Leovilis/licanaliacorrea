@@ -71,7 +71,7 @@ h2 {
 }
 
 .intro-container {
-  margin-top: 60px;
+  margin-top: 30px;
   /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr) 2fr;
@@ -261,16 +261,19 @@ h2 {
     width: 10%;
   }
 
+  .fila{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+
   .logo-container {
-    margin-left: 70px;
+    /* margin-left: 70px; */
   }
   .img-bienvenida {
     width: 475px;
     /* margin-left: 90px; */
     margin-top: 15px;
-  }
-  .bienvenida {
-    margin-left: 30px;
   }
 
   .parrafo-enfoque {
