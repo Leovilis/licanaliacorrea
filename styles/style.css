@@ -15,15 +15,13 @@ body {
   height: auto !important;
   margin-right: 50px;
 }
-.navbar-toggler {
-  margin-right: 10px;
-}
+
 .navbar-toggler-icon {
   width: 1em !important;
 }
 .navbar {
   display: flex !important;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -77,6 +75,9 @@ h2 {
   grid-template-rows: repeat(2, 1fr) 2fr;
   grid-column-gap: 0px;
   grid-row-gap: 20px; */
+}
+.row {
+  display: flex;
 }
 .parrafo-info {
   font-family: "Poppins", cursive;
@@ -155,13 +156,7 @@ h2 {
   grid-column-gap: 10px;
 }
 
-@media screen and (min-width: 320px) {
-  h1 {
-    display: none;
-  }
-  .prestaciones {
-    font-size: 120px;
-  }
+@media screen and (min-width: 320px) and (max-width: 699px) {
   .navbar {
     height: 280px;
     background-image: url("../assets/foot.png");
@@ -173,6 +168,54 @@ h2 {
   .navbar-toggler {
     border-color: rgba(175, 96, 116, 0.815) !important;
     border-width: 3px;
+  }
+.container-fluid{
+  justify-content: end !important;
+}
+  .navbar-nav {
+    display: none; /* Oculta la lista inicialmente */
+  }
+  
+  .navbar-toggler:focus + .collapse.navbar-collapse .navbar-nav{ 
+   
+    display: inline-block; /* Muestra la lista a la derecha cuando el botón tiene el foco */
+    position: absolute; /* Posiciona la lista a la derecha */
+    right: 0; /* Alinea la lista a la derecha */
+    top: 100%; /* Alinea la lista debajo del botón */
+    background-color: #FFFF;
+    padding: 10px; /* Estilo opcional para el espaciado interno de la lista */
+  }
+
+  h1 {
+    display: none;
+  }
+  .prestaciones {
+    font-size: 120px;
+  }
+  .info,
+  .p1,
+  .p2 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+  .img-services {
+    width: 290px;
+    margin-left: 36px;
+  }
+  .info-servicios-p1,
+  .info-servicios-p2,
+  .info-servicios-p3,
+  .info-servicios-p4,
+  .info-servicios-p5,
+  .info-servicios-p6 {
+    display: none;
+  }
+  .row {
+    display: inline;
   }
   .img-container {
     height: 100px;
@@ -194,6 +237,15 @@ h2 {
   } */
   .pie {
     background-color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  h4 {
+    width: 349px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 15px;
+    text-align: justify;
   }
   .img-foot {
     width: 100%;
@@ -203,7 +255,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 5px;
   }
 
@@ -217,12 +269,9 @@ h2 {
 }
 
 @media screen and (min-width: 700px) {
-  h1 {
-    display: none;
-  }
-  /* .navbar-toggler{
+  .navbar-toggler {
     margin-right: 10px;
-  } */
+  }
   .navbar {
     height: 300px;
   }
@@ -248,28 +297,31 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .navbar {
-    height: 250px;
-    block-size: 300px;
-    background-size: contain;
-    background-color: white !important;
-  }
+    height: 150px;
 
-  .img-container {
-    height: 50px;
+    /* height: 280px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    block-size: 150px;
   }
+  
+
+  .titulo{
+    color: #db579d;
+    text-shadow: 4px 4px 2px rgba(202, 120, 120, 0.6);
+  }
+ 
   .img-logo {
-    width: 10%;
+    width: 400px;
   }
 
-  .fila{
-    display: flex;  
+  .fila {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .logo-container {
-    /* margin-left: 70px; */
-  }
   .img-bienvenida {
     width: 475px;
     /* margin-left: 90px; */
@@ -319,6 +371,9 @@ h2 {
     margin-right: 10px !important;
     filter: blur(0px);
   } */
+  .servicios {
+    margin: 0 30px 50px 30px;
+  }
   .info-servicios-p1 {
     font-size: 22px;
     line-height: 45px;
@@ -374,5 +429,10 @@ h2 {
     text-transform: uppercase;
     font-size: 18px;
     color: rgba(24, 24, 24, 0.637);
+    margin-bottom: 30px;
+  }
+  .icons {
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
