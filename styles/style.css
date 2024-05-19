@@ -169,20 +169,19 @@ h2 {
     border-color: rgba(175, 96, 116, 0.815) !important;
     border-width: 3px;
   }
-.container-fluid{
-  justify-content: end !important;
-}
+  .container-fluid {
+    justify-content: end !important;
+  }
   .navbar-nav {
     display: none; /* Oculta la lista inicialmente */
   }
-  
-  .navbar-toggler:focus + .collapse.navbar-collapse .navbar-nav{ 
-   
+
+  .navbar-toggler:focus + .collapse.navbar-collapse .navbar-nav {
     display: inline-block; /* Muestra la lista a la derecha cuando el botón tiene el foco */
     position: absolute; /* Posiciona la lista a la derecha */
     right: 0; /* Alinea la lista a la derecha */
     top: 100%; /* Alinea la lista debajo del botón */
-    background-color: #FFFF;
+    background-color: #ffff;
     padding: 10px; /* Estilo opcional para el espaciado interno de la lista */
   }
 
@@ -298,20 +297,19 @@ h2 {
 @media screen and (min-width: 1200px) {
   .navbar {
     height: 150px;
-
-    /* height: 280px; */
+    background-image: url("../assets/foot.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: white;
     block-size: 150px;
   }
-  
 
-  .titulo{
+  .titulo {
     color: #db579d;
     text-shadow: 4px 4px 2px rgba(202, 120, 120, 0.6);
   }
- 
+
   .img-logo {
     width: 400px;
   }
